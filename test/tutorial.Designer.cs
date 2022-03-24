@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace test
 {
     partial class tutorial
@@ -244,6 +246,11 @@ namespace test
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void tutorial_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
