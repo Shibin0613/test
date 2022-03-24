@@ -139,7 +139,7 @@ namespace test
             // 
             // ster5
             // 
-            this.ster5.Image = global::test.Properties.Resources.Volster;
+            this.ster5.Image = global::test.Properties.Resources.Leegster;
             this.ster5.Location = new System.Drawing.Point(125, 0);
             this.ster5.Name = "ster5";
             this.ster5.Size = new System.Drawing.Size(25, 25);
