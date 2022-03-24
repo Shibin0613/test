@@ -17,10 +17,6 @@ namespace test
 
         {
             InitializeComponent();
-            //variabelen
-            string tekst = DateTime.Now.ToString("dd/MM/yy");
-
-
         }
         
 
@@ -127,6 +123,11 @@ namespace test
         private void OpslaanNEE_Click_1(object sender, EventArgs e)
         {
             OpslaanPanel.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
