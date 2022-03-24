@@ -81,6 +81,13 @@ namespace test
                 e.Cancel = true;
             }
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            var form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
     }
 }
 
