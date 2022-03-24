@@ -93,17 +93,25 @@ namespace test
                 test.WriteLine(fileName);
             }
 
-
+            StreamReader sr = new StreamReader("C:\\Users\\pansh\\Desktop\\text\\test.txt");
+            string ouddata = sr.ReadToEnd();
+            string data = tekst1.Text;
+            sr.Close();
+            StreamWriter sw = new StreamWriter("C:\\Users\\pansh\\Desktop\\text\\test.txt");
+            sw.WriteLine(data + Environment.NewLine + ouddata);
+            sw.Close();
 
             MessageBox.Show("Gegevens opgeslagen");
             var tutorial = new tutorial();
             tutorial.Show();
             this.Hide();
-            text1.Text = File.ReadAllText("C:\\Users\\pansh\\Desktop\\text\\" + tekst1.Text);
-            text.Text = File.ReadAllText("C:\\Users\\pansh\\Desktop\\text\\" + tekst1.Text);
+
         }
 
-
-
+        private void tutorial_Load(object sender, EventArgs e)
+        {
+            text1.Text = File.ReadAllText("C:\\Users\\pansh\\Desktop\\text\\test.txt");
+            text.Text = File.ReadAllText("C:\\Users\\pansh\\Desktop\\text\\test.txt");
+        }
     }
 }
