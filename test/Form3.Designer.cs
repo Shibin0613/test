@@ -32,13 +32,13 @@ namespace test
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -77,16 +77,6 @@ namespace test
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel3.Location = new System.Drawing.Point(121, 149);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(480, 166);
-            this.panel3.TabIndex = 5;
-            this.panel3.Visible = false;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
             // label4
             // 
             this.label4.Location = new System.Drawing.Point(14, 28);
@@ -104,6 +94,16 @@ namespace test
             this.label2.TabIndex = 0;
             this.label2.Text = "Clickcollectsnack";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel3.Location = new System.Drawing.Point(125, 149);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(480, 166);
+            this.panel3.TabIndex = 5;
+            this.panel3.Visible = false;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
@@ -114,15 +114,6 @@ namespace test
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(345, 258);
             this.panel2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(114, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ga verder";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -141,6 +132,16 @@ namespace test
             this.label5.Size = new System.Drawing.Size(288, 37);
             this.label5.TabIndex = 0;
             this.label5.Text = "Voer de naam van het project in";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(114, 181);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 38);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Ga verder";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
