@@ -248,11 +248,6 @@ namespace test
 
         }
 
-        private void tutorial_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
 
         private System.Windows.Forms.Button slaover;
