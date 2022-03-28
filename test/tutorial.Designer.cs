@@ -45,7 +45,6 @@ namespace test
             this.foto1 = new System.Windows.Forms.PictureBox();
             this.tekst1 = new System.Windows.Forms.TextBox();
             this.opslaan = new System.Windows.Forms.Button();
-            this.text1 = new System.Windows.Forms.Button();
             this.text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.foto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto3)).BeginInit();
@@ -196,15 +195,6 @@ namespace test
             this.opslaan.UseVisualStyleBackColor = true;
             this.opslaan.Click += new System.EventHandler(this.opslaan_Click);
             // 
-            // text1
-            // 
-            this.text1.Location = new System.Drawing.Point(394, 402);
-            this.text1.Name = "text1";
-            this.text1.Size = new System.Drawing.Size(94, 29);
-            this.text1.TabIndex = 23;
-            this.text1.Text = "button6";
-            this.text1.UseVisualStyleBackColor = true;
-            // 
             // text
             // 
             this.text.AutoSize = true;
@@ -220,7 +210,6 @@ namespace test
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 567);
             this.Controls.Add(this.text);
-            this.Controls.Add(this.text1);
             this.Controls.Add(this.opslaan);
             this.Controls.Add(this.tekst1);
             this.Controls.Add(this.foto1);
@@ -263,7 +252,6 @@ namespace test
         private System.Windows.Forms.PictureBox foto1;
         private System.Windows.Forms.TextBox tekst1;
         private System.Windows.Forms.Button opslaan;
-        private System.Windows.Forms.Button text1;
         private System.Windows.Forms.Label text;
     }
 }

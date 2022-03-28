@@ -81,13 +81,14 @@ namespace test
         {
             tekst1.MaxLength = 200;
         }
-
+        
+        
         private void opslaan_Click(object sender, EventArgs e)
         {
             string fileName = tekst1.Text;
             string docPath = "C:\\Users\\pansh\\Desktop\\text\\";
             string fullPath = Path.Combine(docPath, fileName);
-
+            
             using (StreamWriter test = new StreamWriter(fullPath))
             {
                 test.WriteLine(fileName);
@@ -98,19 +99,33 @@ namespace test
             string data = tekst1.Text;
             sr.Close();
             StreamWriter sw = new StreamWriter("C:\\Users\\pansh\\Desktop\\text\\test.txt");
-            sw.WriteLine(data + Environment.NewLine + ouddata);
+            sw.WriteLine(data +Environment.NewLine + ouddata);
             sw.Close();
+            
+            int X = 5;
+            int y = 4;
+            
+            for (int i = 1; i <= X; i++) {
+                Button A = new Button();
+                StreamReader er = new StreamReader("C:\\Users\\pansh\\Desktop\\text\\test.txt");
+                A.Text = er.ReadLine();
+                A.Size = new Size(35, 35);
+                A.Name = er.ReadLine();
+                er.Close();
+                A.Location = new Point(40*(i+1), 40*y);
+                Controls.Add(A);
+            }
+            X++;
+
 
             MessageBox.Show("Gegevens opgeslagen");
             var tutorial = new tutorial();
             tutorial.Show();
             this.Hide();
-
         }
 
         private void tutorial_Load(object sender, EventArgs e)
         {
-            text1.Text = File.ReadAllText("C:\\Users\\pansh\\Desktop\\text\\test.txt");
             text.Text = File.ReadAllText("C:\\Users\\pansh\\Desktop\\text\\test.txt");
         }
     }

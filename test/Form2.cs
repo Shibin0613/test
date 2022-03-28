@@ -78,29 +78,75 @@ namespace test
         {
             switch (ratings)
             {
+                case 0:
+                    {
+                        ster(0);
+                        break;
+                    }
                 case 1:
                     {
-                        Ster1();
+                        ster(1);
                         break;
                     }
                 case 2:
                     {
-                        Ster2();
+                        ster(2);
                         break;
                     }
                 case 3:
                     {
-                        Ster3();
+                        ster(3);
                         break;
                     }
                 case 4:
                     {
-                        Ster4();
+                        ster(4);
                         break;
                     }
                 case 5:
                     {
-                        Ster5();
+                        ster(5);
+                        break;
+                    }
+            }
+        }
+        private void Sterrenopslaan(int ratingnumber)
+        {
+            switch (pagina)
+            {
+                case 1:
+                    {
+                        rating1 = ratingnumber;
+                        break;
+                    }
+                case 2:
+                    {
+                        rating2 = ratingnumber;
+                        break;
+                    }
+                case 3:
+                    {
+                        rating3 = ratingnumber;
+                        break;
+                    }
+                case 4:
+                    {
+                        rating4 = ratingnumber;
+                        break;
+                    }
+                case 5:
+                    {
+                        rating5 = ratingnumber;
+                        break;
+                    }
+                case 6:
+                    {
+                        rating6 = ratingnumber;
+                        break;
+                    }
+                case 7:
+                    {
+                        rating7 = ratingnumber;
                         break;
                     }
             }
@@ -111,61 +157,37 @@ namespace test
             {
                 case 1:
                     {
-                        
-                        
                         Opmerking1 = Opmerking.Text;
-                        rating1 = rating;
-
                         break;
                     }
                 case 2:
                     {
-                        
-                        
                         Opmerking2 = Opmerking.Text;
-                        rating2 = rating;
                         break;
                     }
                 case 3:
                     {
-                        
-                        
                         Opmerking3 = Opmerking.Text;
-                        rating3 = rating;
-                        
                         break;
                     }
                 case 4:
                     {
-                        
-                        
                         Opmerking4 = Opmerking.Text;
-                        rating4 = rating;
                         break;
                     }
                 case 5:
                     {
-                        
-                       
                         Opmerking5 = Opmerking.Text;
-                        rating5 = rating;
                         break;
                     }
                 case 6:
                     {
-                        
-                        
                         Opmerking6 = Opmerking.Text;
-                        rating6 = rating;
                         break;
                     }
                 case 7:
                     {
-                        
-                        
                         Opmerking7 = Opmerking.Text;
-                        rating7 = rating;
-
                         break;
                     }
                 case 8:
@@ -243,46 +265,47 @@ namespace test
                     }
             }
         }
-        private void Ster1()
+        private void ster(int rating)
         {
-            ster1.Image = test.Properties.Resources.Volster;
+            ster1.Image = test.Properties.Resources.Leegster;
             ster2.Image = test.Properties.Resources.Leegster;
             ster3.Image = test.Properties.Resources.Leegster;
             ster4.Image = test.Properties.Resources.Leegster;
             ster5.Image = test.Properties.Resources.Leegster;
+
+            for (int i = 1; i <= rating; i++)
+            {
+                switch (i)
+                {
+                    case 1:
+                        {
+                            ster1.Image = test.Properties.Resources.Volster;
+                            break;
+                        }
+                    case 2:
+                        {
+                            ster2.Image = test.Properties.Resources.Volster;
+                            break;
+                        }
+                    case 3:
+                        {
+                            ster3.Image = test.Properties.Resources.Volster;
+                            break;
+                        }
+                    case 4:
+                        {
+                            ster4.Image = test.Properties.Resources.Volster;
+                            break;
+                        }
+                    case 5:
+                        {
+                            ster5.Image = test.Properties.Resources.Volster;
+                            break;
+                        }
+                }
+            }
         }
-        private void Ster2()
-        {
-            ster1.Image = test.Properties.Resources.Volster;
-            ster2.Image = test.Properties.Resources.Volster;
-            ster3.Image = test.Properties.Resources.Leegster;
-            ster4.Image = test.Properties.Resources.Leegster;
-            ster5.Image = test.Properties.Resources.Leegster;
-        }
-        private void Ster3()
-        {
-            ster1.Image = test.Properties.Resources.Volster;
-            ster2.Image = test.Properties.Resources.Volster;
-            ster3.Image = test.Properties.Resources.Volster;
-            ster4.Image = test.Properties.Resources.Leegster;
-            ster5.Image = test.Properties.Resources.Leegster;
-        }
-        private void Ster4()
-        {
-            ster1.Image = test.Properties.Resources.Volster;
-            ster2.Image = test.Properties.Resources.Volster;
-            ster3.Image = test.Properties.Resources.Volster;
-            ster4.Image = test.Properties.Resources.Volster;
-            ster5.Image = test.Properties.Resources.Leegster;
-        }
-        private void Ster5()
-        {
-            ster1.Image = test.Properties.Resources.Volster;
-            ster2.Image = test.Properties.Resources.Volster;
-            ster3.Image = test.Properties.Resources.Volster;
-            ster4.Image = test.Properties.Resources.Volster;
-            ster5.Image = test.Properties.Resources.Volster;
-        }
+        
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -339,29 +362,34 @@ namespace test
         private void ster1_Click(object sender, EventArgs e)
         {
             rating = 1;
-            Ster1();
+            Sterrenopslaan(1);
+            ster(rating);
         }
         private void ster2_Click(object sender, EventArgs e)
         {
             rating = 2;
-            Ster2();
+            Sterrenopslaan(2);
+            ster(rating);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             rating = 3;
-            Ster3();
+            Sterrenopslaan(3);
+            ster(rating);
         }
         private void ster4_Click(object sender, EventArgs e)
         {
             rating = 4;
-            Ster4();
+            Sterrenopslaan(4);
+            ster(rating);
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             rating = 5;
-            Ster5();
+            Sterrenopslaan(5);
+            ster(rating);
         }
 
 
