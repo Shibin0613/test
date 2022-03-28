@@ -69,6 +69,15 @@
     <Compile Include="vergelijking.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="tutorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tutorial.Designer.cs">
+      <DependentUpon>tutorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vergelijking.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="vergelijking.Designer.cs">
       <DependentUpon>vergelijking.cs</DependentUpon>
     </Compile>
