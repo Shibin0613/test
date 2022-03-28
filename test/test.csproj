@@ -85,6 +85,15 @@
     <EmbeddedResource Include="obj\Debug\test.Properties.Resources.resources" />
     <EmbeddedResource Include="obj\Debug\test.tutorial.resources" />
     <EmbeddedResource Include="obj\Debug\test.vergelijking.resources" />
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\test.Form2.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Form3.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\test.tutorial.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Variabelen.resources" />
+    <EmbeddedResource Include="obj\Debug\test.vergelijking.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="obj\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

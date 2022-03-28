@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace test
 {
+    class Variabelen
+    {
+        public static string ProjectNaam = "";
+    }
     public partial class Form3 : Form
     {
         public Form3()
@@ -32,9 +36,16 @@ namespace test
 
         }
 
-        private void button1_Click(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            panel3.Visible = true;
+            Form2 beoordeling = new Form2();
+
+            beoordeling.ShowDialog();
+
+            //Variabelen.ProjectNaam = textbox1.text;
+           // panel3.Visible = true;
         }
+
+        
     }
 }
