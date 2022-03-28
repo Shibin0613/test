@@ -10,10 +10,7 @@ using System.Windows.Forms;
 
 namespace test
 {
-    class Variabelen
-    {
-        public static string ProjectNaam = "";
-    }
+   
     public partial class Form3 : Form
     {
         public Form3()
