@@ -267,7 +267,6 @@ namespace test
             this.ClientSize = new System.Drawing.Size(600, 400);
             this.Controls.Add(this.Gaverder);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
