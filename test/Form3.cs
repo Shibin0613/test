@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace test
 {
+   
     public partial class Form3 : Form
     {
         public Form3()
@@ -39,6 +40,7 @@ namespace test
             beoordeling.ShowDialog();
 
             Variabelen.ProjectNaam = textBox1.Text;
+           // panel3.Visible = true;
         }
 
         private void tutorial_Click(object sender, EventArgs e)
@@ -49,7 +51,7 @@ namespace test
         }
     }
     class Variabelen
-    {  
+    {
         public static string ProjectNaam = "";
     }
 }

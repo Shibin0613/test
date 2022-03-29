@@ -261,8 +261,6 @@ namespace test
                         Beöordelingspunt.Text = beöordelingspunt7;
                         Puntinfo.Text = Beöorderlingtext7;
                         Sterrentonen(rating7);
-                        Gaverder.Visible = false;
-                        Opslaan2.Visible = true;
                         break;
                     }
             }
