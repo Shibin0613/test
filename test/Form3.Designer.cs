@@ -38,6 +38,7 @@ namespace test
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.tutorial = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -132,11 +133,25 @@ namespace test
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // tutorial
+            // 
+            this.tutorial.BackColor = System.Drawing.Color.LawnGreen;
+            this.tutorial.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tutorial.Location = new System.Drawing.Point(29, 390);
+            this.tutorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tutorial.Name = "tutorial";
+            this.tutorial.Size = new System.Drawing.Size(94, 23);
+            this.tutorial.TabIndex = 8;
+            this.tutorial.Text = "Tutorial";
+            this.tutorial.UseVisualStyleBackColor = false;
+            this.tutorial.Click += new System.EventHandler(this.tutorial_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tutorial);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
@@ -162,5 +177,6 @@ namespace test
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button tutorial;
     }
 }

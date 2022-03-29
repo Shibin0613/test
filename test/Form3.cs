@@ -41,7 +41,12 @@ namespace test
             Variabelen.ProjectNaam = textBox1.Text;
         }
 
-        
+        private void tutorial_Click(object sender, EventArgs e)
+        {
+            var tutorial = new tutorial();
+            tutorial.Show();
+            this.Hide();
+        }
     }
     class Variabelen
     {  

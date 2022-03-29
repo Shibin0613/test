@@ -418,7 +418,7 @@ namespace test
             string datum = DateTime.Now.ToString("dd/MM");
             System.IO.File.AppendAllText(pad + bestandsnaam, " | " + ProjectNaam + " | " + datum + " | " + Environment.NewLine);
             OpslaanPanel.Visible = false;
-            OpslaanMelding.Visible = true;
+
         }
 
         private void OpslaanNee_Click(object sender, EventArgs e)
