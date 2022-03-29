@@ -58,7 +58,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.ster5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.OpslaanMelding.SuspendLayout();
+            ///this.OpslaanMelding.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -340,8 +340,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.ster5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.OpslaanMelding.ResumeLayout(false);
-            this.OpslaanMelding.PerformLayout();
+            //this.OpslaanMelding.ResumeLayout(false);
+            //this.OpslaanMelding.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);

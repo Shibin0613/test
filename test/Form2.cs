@@ -264,7 +264,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo7;
                         Beöordelingspunt.Text = beöordelingspunt7;
                         Puntinfo.Text = Beöorderlingtext7;
-                        Sterrentonen(rating7);
+                        Sterrentonen(Beoordelingen.rating7);
                         Gaverder.Visible = false;
                         Opslaan2.Visible = true;
                         break;
