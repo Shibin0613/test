@@ -29,6 +29,8 @@ namespace test
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            ""}, -1, System.Drawing.Color.Empty, System.Drawing.Color.White, null);
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -38,6 +40,7 @@ namespace test
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.Lijst = new System.Windows.Forms.ListView();
             this.tutorial = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -68,12 +71,13 @@ namespace test
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.panel1.Controls.Add(this.Lijst);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(12, 91);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(297, 55);
+            this.panel1.Size = new System.Drawing.Size(297, 64);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -133,6 +137,17 @@ namespace test
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Lijst
+            // 
+            this.Lijst.HideSelection = false;
+            this.Lijst.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.Lijst.Location = new System.Drawing.Point(0, -18);
+            this.Lijst.Name = "Lijst";
+            this.Lijst.Size = new System.Drawing.Size(339, 340);
+            this.Lijst.TabIndex = 9;
+            this.Lijst.UseCompatibleStateImageBehavior = false;
+            // 
             // tutorial
             // 
             this.tutorial.BackColor = System.Drawing.Color.LawnGreen;
@@ -178,5 +193,6 @@ namespace test
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button tutorial;
+        private System.Windows.Forms.ListView Lijst;
     }
 }
