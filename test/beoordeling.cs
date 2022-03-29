@@ -464,7 +464,7 @@ namespace test
             string pad = @"C:\Users\walsw\";
             string datum = DateTime.Now.ToString("dd/MM");
             System.IO.File.AppendAllText(pad + bestandsnaam, projectName + Environment.NewLine + datum + Environment.NewLine + Beoordelingen.rating1 + Environment.NewLine + Beoordelingen.rating2 + Environment.NewLine + Beoordelingen.rating3 + Environment.NewLine + Beoordelingen.rating4 + Environment.NewLine + Beoordelingen.rating5 + Environment.NewLine + Beoordelingen.rating6 + Environment.NewLine + Beoordelingen.rating7 + Environment.NewLine);
-            //panel6.Visible = false;
+            panel6.Visible = false;
 
         }
 
