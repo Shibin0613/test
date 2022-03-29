@@ -45,7 +45,8 @@ namespace test
             this.foto1 = new System.Windows.Forms.PictureBox();
             this.tekst1 = new System.Windows.Forms.TextBox();
             this.opslaan = new System.Windows.Forms.Button();
-            this.text = new System.Windows.Forms.Label();
+            this.textX = new System.Windows.Forms.TextBox();
+            this.textY = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.foto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto4)).BeginInit();
@@ -208,21 +209,37 @@ namespace test
             this.opslaan.UseVisualStyleBackColor = true;
             this.opslaan.Click += new System.EventHandler(this.opslaan_Click);
             // 
-            // text
+            // textX
             // 
-            this.text.AutoSize = true;
-            this.text.Location = new System.Drawing.Point(90, 302);
-            this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(46, 17);
-            this.text.TabIndex = 24;
-            this.text.Text = "label1";
+            this.textX.Location = new System.Drawing.Point(124, 398);
+            this.textX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textX.MaxLength = 10;
+            this.textX.Multiline = true;
+            this.textX.Name = "textX";
+            this.textX.Size = new System.Drawing.Size(125, 22);
+            this.textX.TabIndex = 25;
+            this.textX.Text = "5";
+            this.textX.Visible = false;
+            // 
+            // textY
+            // 
+            this.textY.Location = new System.Drawing.Point(374, 398);
+            this.textY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textY.MaxLength = 10;
+            this.textY.Multiline = true;
+            this.textY.Name = "textY";
+            this.textY.Size = new System.Drawing.Size(125, 22);
+            this.textY.TabIndex = 26;
+            this.textY.Text = "4";
+            this.textY.Visible = false;
             // 
             // tutorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 454);
-            this.Controls.Add(this.text);
+            this.Controls.Add(this.textY);
+            this.Controls.Add(this.textX);
             this.Controls.Add(this.opslaan);
             this.Controls.Add(this.tekst1);
             this.Controls.Add(this.foto1);
@@ -240,6 +257,7 @@ namespace test
             this.Name = "tutorial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Voortgangsmetingsapplicatie_Tutorial";
+            this.Load += new System.EventHandler(this.tutorial_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.foto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto4)).EndInit();
@@ -265,6 +283,7 @@ namespace test
         private System.Windows.Forms.PictureBox foto1;
         private System.Windows.Forms.TextBox tekst1;
         private System.Windows.Forms.Button opslaan;
-        private System.Windows.Forms.Label text;
+        private System.Windows.Forms.TextBox textX;
+        private System.Windows.Forms.TextBox textY;
     }
 }
