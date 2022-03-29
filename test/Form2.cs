@@ -406,7 +406,7 @@ namespace test
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            OpslaanPanel.Visible = true;
+            panel6.Visible = true;
         }
  
 
@@ -420,21 +420,27 @@ namespace test
 
         }
 
-        private void OpslaanNee_Click_1(object sender, EventArgs e)
+        private void OpslaanNee_Click(object sender, EventArgs e)
         {
-            OpslaanPanel.Visible = false;
+            panel6.Visible = false;
         }
 
-        private void Opslaan_Click(object sender, EventArgs e)
+        private void Opslaan_Click_1(object sender, EventArgs e)
         {
-            string ProjectNaam = Variabelen.ProjectNaam;
             string bestandsnaam = "BeoordelingData.txt";
             string pad = @"C:\Users\walsw\";
             string datum = DateTime.Now.ToString("dd/MM");
             System.IO.File.AppendAllText(pad + bestandsnaam, " | " + projectName + " | " + datum + " | " + Beoordelingen.rating1 + " | " + Beoordelingen.rating2 + " | " + Beoordelingen.rating3 + " | " + Beoordelingen.rating4 + " | " + Beoordelingen.rating5 + " | " + Beoordelingen.rating6 + " | " + Beoordelingen.rating7 + " | " + Environment.NewLine);
-            OpslaanPanel.Visible = false;
+            panel6.Visible = false;
 
         }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
     class Beoordelingen
     {

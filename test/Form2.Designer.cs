@@ -32,8 +32,10 @@ namespace test
             this.Gaverder = new System.Windows.Forms.Button();
             this.Gaterug = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.OpslaanPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.Opslaan = new System.Windows.Forms.Button();
+            this.OpslaanNee = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.ster2 = new System.Windows.Forms.PictureBox();
             this.ster4 = new System.Windows.Forms.PictureBox();
@@ -45,20 +47,23 @@ namespace test
             this.Puntinfo = new System.Windows.Forms.Label();
             this.Beöordelingspunt = new System.Windows.Forms.Label();
             this.Opmerkingtoevoegen = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.OpslaanPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.Opslaan2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Sluiten = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ster2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ///this.OpslaanMelding.SuspendLayout();
+            this.OpslaanPanel.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +81,7 @@ namespace test
             // Gaterug
             // 
             this.Gaterug.Location = new System.Drawing.Point(133, 400);
-            this.Gaterug.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Gaterug.Margin = new System.Windows.Forms.Padding(4);
             this.Gaterug.Name = "Gaterug";
             this.Gaterug.Size = new System.Drawing.Size(100, 31);
             this.Gaterug.TabIndex = 1;
@@ -87,6 +92,7 @@ namespace test
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.Opmerking);
             this.panel2.Controls.Add(this.Leesmeer);
@@ -94,32 +100,53 @@ namespace test
             this.panel2.Controls.Add(this.Beöordelingspunt);
             this.panel2.Controls.Add(this.Opmerkingtoevoegen);
             this.panel2.Location = new System.Drawing.Point(133, 146);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(533, 246);
             this.panel2.TabIndex = 2;
             // 
-            // OpslaanPanel
+            // panel6
             // 
-            this.OpslaanPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
-            this.OpslaanPanel.Controls.Add(this.Opslaan);
-            this.OpslaanPanel.Controls.Add(this.OpslaanNee);
-            this.OpslaanPanel.Controls.Add(this.label1);
-            this.OpslaanPanel.Location = new System.Drawing.Point(76, 38);
-            this.OpslaanPanel.Name = "OpslaanPanel";
-            this.OpslaanPanel.Size = new System.Drawing.Size(391, 154);
-            this.OpslaanPanel.TabIndex = 6;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.panel6.Controls.Add(this.Opslaan);
+            this.panel6.Controls.Add(this.OpslaanNee);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Location = new System.Drawing.Point(55, 49);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(428, 133);
+            this.panel6.TabIndex = 5;
+            this.panel6.Visible = false;
             // 
-            // label1
+            // Opslaan
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(64, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Weet u zeker dat u wilt oplsaan?";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.Opslaan.Location = new System.Drawing.Point(331, 96);
+            this.Opslaan.Name = "Opslaan";
+            this.Opslaan.Size = new System.Drawing.Size(75, 23);
+            this.Opslaan.TabIndex = 2;
+            this.Opslaan.Text = "Ja";
+            this.Opslaan.UseVisualStyleBackColor = true;
+            this.Opslaan.Click += new System.EventHandler(this.Opslaan_Click_1);
+            // 
+            // OpslaanNee
+            // 
+            this.OpslaanNee.Location = new System.Drawing.Point(18, 96);
+            this.OpslaanNee.Name = "OpslaanNee";
+            this.OpslaanNee.Size = new System.Drawing.Size(75, 23);
+            this.OpslaanNee.TabIndex = 1;
+            this.OpslaanNee.Text = "Nee";
+            this.OpslaanNee.UseVisualStyleBackColor = true;
+            this.OpslaanNee.Click += new System.EventHandler(this.OpslaanNee_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(86, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(260, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Weet je zeker dat je wilt opslaan?";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // panel4
             // 
@@ -129,17 +156,16 @@ namespace test
             this.panel4.Controls.Add(this.ster5);
             this.panel4.Controls.Add(this.ster1);
             this.panel4.Location = new System.Drawing.Point(33, 154);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 31);
             this.panel4.TabIndex = 4;
             // 
             // ster2
             // 
-            System.Drawing.Bitmap leegster = global::test.Properties.Resources.Leegster;
-            this.ster2.Image = leegster;
+            this.ster2.Image = global::test.Properties.Resources.Leegster;
             this.ster2.Location = new System.Drawing.Point(43, 0);
-            this.ster2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ster2.Margin = new System.Windows.Forms.Padding(4);
             this.ster2.Name = "ster2";
             this.ster2.Size = new System.Drawing.Size(33, 31);
             this.ster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +177,7 @@ namespace test
             // 
             this.ster4.Image = global::test.Properties.Resources.Leegster;
             this.ster4.Location = new System.Drawing.Point(125, 0);
-            this.ster4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ster4.Margin = new System.Windows.Forms.Padding(4);
             this.ster4.Name = "ster4";
             this.ster4.Size = new System.Drawing.Size(33, 31);
             this.ster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +189,7 @@ namespace test
             // 
             this.ster3.Image = global::test.Properties.Resources.Leegster;
             this.ster3.Location = new System.Drawing.Point(84, 0);
-            this.ster3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ster3.Margin = new System.Windows.Forms.Padding(4);
             this.ster3.Name = "ster3";
             this.ster3.Size = new System.Drawing.Size(33, 31);
             this.ster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,7 +201,7 @@ namespace test
             // 
             this.ster5.Image = global::test.Properties.Resources.Leegster;
             this.ster5.Location = new System.Drawing.Point(167, 0);
-            this.ster5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ster5.Margin = new System.Windows.Forms.Padding(4);
             this.ster5.Name = "ster5";
             this.ster5.Size = new System.Drawing.Size(33, 31);
             this.ster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -188,7 +214,7 @@ namespace test
             // 
             this.ster1.Image = global::test.Properties.Resources.Leegster;
             this.ster1.Location = new System.Drawing.Point(0, 0);
-            this.ster1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ster1.Margin = new System.Windows.Forms.Padding(4);
             this.ster1.Name = "ster1";
             this.ster1.Size = new System.Drawing.Size(33, 31);
             this.ster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -199,7 +225,7 @@ namespace test
             // Opmerking
             // 
             this.Opmerking.Location = new System.Drawing.Point(300, 92);
-            this.Opmerking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Opmerking.Margin = new System.Windows.Forms.Padding(4);
             this.Opmerking.Multiline = true;
             this.Opmerking.Name = "Opmerking";
             this.Opmerking.Size = new System.Drawing.Size(199, 122);
@@ -211,7 +237,7 @@ namespace test
             this.Leesmeer.BackColor = System.Drawing.Color.White;
             this.Leesmeer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Leesmeer.Location = new System.Drawing.Point(132, 81);
-            this.Leesmeer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Leesmeer.Margin = new System.Windows.Forms.Padding(4);
             this.Leesmeer.Name = "Leesmeer";
             this.Leesmeer.Size = new System.Drawing.Size(100, 28);
             this.Leesmeer.TabIndex = 4;
@@ -246,7 +272,7 @@ namespace test
             // Opmerkingtoevoegen
             // 
             this.Opmerkingtoevoegen.Location = new System.Drawing.Point(300, 49);
-            this.Opmerkingtoevoegen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Opmerkingtoevoegen.Margin = new System.Windows.Forms.Padding(4);
             this.Opmerkingtoevoegen.Name = "Opmerkingtoevoegen";
             this.Opmerkingtoevoegen.Size = new System.Drawing.Size(200, 31);
             this.Opmerkingtoevoegen.TabIndex = 0;
@@ -254,22 +280,41 @@ namespace test
             this.Opmerkingtoevoegen.UseVisualStyleBackColor = true;
             this.Opmerkingtoevoegen.Click += new System.EventHandler(this.button3_Click);
             // 
-            // panel1
+            // OpslaanPanel
             // 
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.Gaverder);
-            this.panel1.Controls.Add(this.Opslaan2);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.Gaterug);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 492);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.OpslaanPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.OpslaanPanel.Controls.Add(this.label1);
+            this.OpslaanPanel.Location = new System.Drawing.Point(76, 38);
+            this.OpslaanPanel.Name = "OpslaanPanel";
+            this.OpslaanPanel.Size = new System.Drawing.Size(391, 154);
+            this.OpslaanPanel.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(64, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(252, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Weet u zeker dat u wilt oplsaan?";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.Gaverder);
+            this.panel5.Controls.Add(this.Opslaan2);
+            this.panel5.Controls.Add(this.panel3);
+            this.panel5.Controls.Add(this.panel2);
+            this.panel5.Controls.Add(this.Gaterug);
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(800, 492);
+            this.panel5.TabIndex = 0;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Opslaan2
             // 
@@ -289,7 +334,7 @@ namespace test
             this.panel3.Controls.Add(this.Sluiten);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Location = new System.Drawing.Point(705, 28);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(400, 308);
             this.panel3.TabIndex = 3;
@@ -298,7 +343,7 @@ namespace test
             // Sluiten
             // 
             this.Sluiten.Location = new System.Drawing.Point(296, 276);
-            this.Sluiten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sluiten.Margin = new System.Windows.Forms.Padding(4);
             this.Sluiten.Name = "Sluiten";
             this.Sluiten.Size = new System.Drawing.Size(100, 28);
             this.Sluiten.TabIndex = 1;
@@ -310,7 +355,7 @@ namespace test
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(13, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.MaximumSize = new System.Drawing.Size(372, 61);
             this.textBox1.MinimumSize = new System.Drawing.Size(372, 245);
             this.textBox1.Multiline = true;
@@ -325,24 +370,25 @@ namespace test
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 492);
-            this.Controls.Add(this.Gaverder);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ster2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ster1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            //this.OpslaanMelding.ResumeLayout(false);
-            //this.OpslaanMelding.PerformLayout();
+            this.OpslaanPanel.ResumeLayout(false);
+            this.OpslaanPanel.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -357,7 +403,7 @@ namespace test
         private System.Windows.Forms.Label Puntinfo;
         private System.Windows.Forms.Label Beöordelingspunt;
         private System.Windows.Forms.Button Opmerkingtoevoegen;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Sluiten;
         private System.Windows.Forms.TextBox textBox1;
@@ -371,8 +417,9 @@ namespace test
         private System.Windows.Forms.Button Opslaan2;
         private System.Windows.Forms.Panel OpslaanPanel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Opslaan;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button OpslaanNee;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button Opslaan;
     }
 }
