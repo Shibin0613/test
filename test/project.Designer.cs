@@ -34,13 +34,13 @@ namespace test
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Lijst = new System.Windows.Forms.ListView();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.Lijst = new System.Windows.Forms.ListView();
             this.tutorial = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -71,7 +71,6 @@ namespace test
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
-            this.panel1.Controls.Add(this.Lijst);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.ForeColor = System.Drawing.Color.Black;
@@ -80,6 +79,17 @@ namespace test
             this.panel1.Size = new System.Drawing.Size(297, 64);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Lijst
+            // 
+            this.Lijst.HideSelection = false;
+            this.Lijst.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.Lijst.Location = new System.Drawing.Point(17, 184);
+            this.Lijst.Name = "Lijst";
+            this.Lijst.Size = new System.Drawing.Size(339, 340);
+            this.Lijst.TabIndex = 9;
+            this.Lijst.UseCompatibleStateImageBehavior = false;
             // 
             // label4
             // 
@@ -137,17 +147,6 @@ namespace test
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Lijst
-            // 
-            this.Lijst.HideSelection = false;
-            this.Lijst.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.Lijst.Location = new System.Drawing.Point(0, -18);
-            this.Lijst.Name = "Lijst";
-            this.Lijst.Size = new System.Drawing.Size(339, 340);
-            this.Lijst.TabIndex = 9;
-            this.Lijst.UseCompatibleStateImageBehavior = false;
-            // 
             // tutorial
             // 
             this.tutorial.BackColor = System.Drawing.Color.LawnGreen;
@@ -161,17 +160,18 @@ namespace test
             this.tutorial.UseVisualStyleBackColor = false;
             this.tutorial.Click += new System.EventHandler(this.tutorial_Click);
             // 
-            // Form3
+            // project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Lijst);
             this.Controls.Add(this.tutorial);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
-            this.Name = "Form3";
+            this.Name = "project";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);

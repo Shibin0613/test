@@ -83,8 +83,6 @@
     <EmbeddedResource Include="project.resx">
       <DependentUpon>project.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\test.Form2.resources" />
-    <EmbeddedResource Include="obj\Debug\test.Form3.resources" />
     <EmbeddedResource Include="obj\Debug\test.tutorial.resources" />
     <EmbeddedResource Include="obj\Debug\test.vergelijking.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">

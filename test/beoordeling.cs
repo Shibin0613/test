@@ -457,7 +457,6 @@ namespace test
             rating = 5;
             ster(rating);
         }
-        private void Opslaan_Click(object sender, EventArgs e)
         private void Opslaan_Click_1(object sender, EventArgs e)
         {
             string bestandsnaam = "BeoordelingData.txt";

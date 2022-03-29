@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,7 +50,30 @@ namespace test
 
         private void LezenInLijst()
         {
-            var fileLines = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt")
+            var fileLines = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt"))
+            
+            for (int i = 0; i + 4 < fileLines.Length; i += 5)
+            {
+                Lijst.Items.Add(
+                    new ListViewItem(new[]
+                    {
+                        fileLines[i],
+                        fileLines[i + 1],
+                        fileLines[i + 2],
+                        fileLines[i + 3],
+                        fileLines[i + 4],
+                        fileLines[i + 5],
+                        fileLines[i + 6],
+                        fileLines[i + 7],
+                        fileLines[i + 8]
+                    }));
+            }
+
+            for (int i = 0; i < Lijst.Columns.Count; i++)
+                {
+                Lijst.Columns[i].Width = -2;
+                }
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
