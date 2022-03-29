@@ -261,6 +261,8 @@ namespace test
                         Beöordelingspunt.Text = beöordelingspunt7;
                         Puntinfo.Text = Beöorderlingtext7;
                         Sterrentonen(rating7);
+                        Gaverder.Visible = false;
+                        Opslaan2.Visible = true;
                         break;
                     }
             }
@@ -394,6 +396,37 @@ namespace test
 
 
         private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Opslaan2_Click(object sender, EventArgs e)
+        {
+            OpslaanPanel.Visible = true;
+        }
+
+        private void Opslaan_Click(object sender, EventArgs e)
+        {
+            string ProjectNaam = Variabelen.ProjectNaam;
+            string bestandsnaam = "Data.txt";
+            string pad = @"C:\Users\walsw\source\repos\test\";
+            string datum = DateTime.Now.ToString("dd/MM");
+            System.IO.File.AppendAllText(pad + bestandsnaam, " | " + ProjectNaam + " | " + datum + " | " + Environment.NewLine);
+            OpslaanPanel.Visible = false;
+            OpslaanMelding.Visible = true;
+        }
+
+        private void OpslaanNee_Click(object sender, EventArgs e)
+        {
+            OpslaanPanel.Visible = false;
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
