@@ -20,8 +20,8 @@ namespace test
 
         private void slaover_Click(object sender, EventArgs e)
         {
-            var vergelijking = new vergelijking();
-            vergelijking.Show();
+            var Form3 = new Form3();
+            Form3.Show();
             this.Hide();
         }
 
@@ -67,8 +67,8 @@ namespace test
 
         private void button5_Click(object sender, EventArgs e)
         {
-            var vergelijking = new vergelijking();
-            vergelijking.Show();
+            var Form3 = new Form3();
+            Form3.Show();
             this.Hide();
         }
     }
