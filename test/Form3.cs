@@ -12,9 +12,14 @@ namespace test
 {
     public partial class Form3 : Form
     {
+      
+
+
         public Form3()
         {
             InitializeComponent();
+
+          
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -34,11 +39,11 @@ namespace test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 beoordeling = new Form2();
+            Form2 beoordeling = new Form2(textBox1.Text);
 
             beoordeling.ShowDialog();
 
-            Variabelen.ProjectNaam = textBox1.Text;
+           // Variabelen.ProjectNaam = textBox1.Text;
         }
 
         

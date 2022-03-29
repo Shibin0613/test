@@ -67,9 +67,6 @@
     <Compile Include="tutorial.Designer.cs">
       <DependentUpon>tutorial.cs</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\test.AssemblyInfo.cs" />
     <Compile Include="vergelijking.cs">
       <SubType>Form</SubType>
     </Compile>

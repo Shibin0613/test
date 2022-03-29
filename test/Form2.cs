@@ -12,10 +12,14 @@ namespace test
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private string projectName;
+
+        public Form2(string name)
         {
             InitializeComponent();
             //Console.WriteLine(rating1 + " " + rating2 + " " + rating3 + " " + rating4 + " " + rating5 + " " + rating6 + " " + rating6);
+
+            projectName = name;
         }
 
         int pagina = 1;
@@ -52,13 +56,13 @@ namespace test
         String Opmerking6 = "";
         String Opmerking7 = "";
 
-        int rating1;
-        int rating2;
-        int rating3;
-        int rating4;
-        int rating5;
-        int rating6;
-        int rating7;
+        //int rating1;
+        //int rating2;
+        //int rating3;
+        //int rating4;
+        //int rating5;
+        //int rating6;
+        //int rating7;
 
         int rating = 0;
 
@@ -116,37 +120,37 @@ namespace test
             {
                 case 1:
                     {
-                        rating1 = ratingnumber;
+                        Beoordelingen.rating1 = ratingnumber;
                         break;
                     }
                 case 2:
                     {
-                        rating2 = ratingnumber;
+                        Beoordelingen.rating2 = ratingnumber;
                         break;
                     }
                 case 3:
                     {
-                        rating3 = ratingnumber;
+                        Beoordelingen.rating3 = ratingnumber;
                         break;
                     }
                 case 4:
                     {
-                        rating4 = ratingnumber;
+                        Beoordelingen.rating4 = ratingnumber;
                         break;
                     }
                 case 5:
                     {
-                        rating5 = ratingnumber;
+                        Beoordelingen.rating5 = ratingnumber;
                         break;
                     }
                 case 6:
                     {
-                        rating6 = ratingnumber;
+                        Beoordelingen.rating6 = ratingnumber;
                         break;
                     }
                 case 7:
                     {
-                        rating7 = ratingnumber;
+                        Beoordelingen.rating7 = ratingnumber;
                         break;
                     }
             }
@@ -206,7 +210,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo1;
                         Beöordelingspunt.Text = beöordelingspunt1;
                         Puntinfo.Text = Beöorderlingtext1;
-                        Sterrentonen(rating1);
+                        Sterrentonen(Beoordelingen.rating1);
                         break;
                     }
                 case 2:
@@ -215,7 +219,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo2;
                         Beöordelingspunt.Text = beöordelingspunt2;
                         Puntinfo.Text = Beöorderlingtext2;
-                        Sterrentonen(rating2);
+                        Sterrentonen(Beoordelingen.rating2);
                         break;
                     }
                 case 3:
@@ -224,7 +228,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo3;
                         Beöordelingspunt.Text = beöordelingspunt3;
                         Puntinfo.Text = Beöorderlingtext3;
-                        Sterrentonen(rating3);
+                        Sterrentonen(Beoordelingen.rating3);
                         break;
                     }
                 case 4:
@@ -233,7 +237,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo4;
                         Beöordelingspunt.Text = beöordelingspunt4;
                         Puntinfo.Text = Beöorderlingtext4;
-                        Sterrentonen(rating4);
+                        Sterrentonen(Beoordelingen.rating4);
                         break;
                     }
                 case 5:
@@ -242,7 +246,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo5;
                         Beöordelingspunt.Text = beöordelingspunt5;
                         Puntinfo.Text = Beöorderlingtext5;
-                        Sterrentonen(rating5);
+                        Sterrentonen(Beoordelingen.rating5);
                         break;
                     }
                 case 6:
@@ -251,7 +255,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo6;
                         Beöordelingspunt.Text = beöordelingspunt6;
                         Puntinfo.Text = Beöorderlingtext6;
-                        Sterrentonen(rating6);
+                        Sterrentonen(Beoordelingen.rating6);
                         break;
                     }
                 case 7:
@@ -260,7 +264,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo7;
                         Beöordelingspunt.Text = beöordelingspunt7;
                         Puntinfo.Text = Beöorderlingtext7;
-                        Sterrentonen(rating7);
+                        Sterrentonen(Beoordelingen.rating7);
                         Gaverder.Visible = false;
                         Opslaan2.Visible = true;
                         break;
@@ -402,33 +406,44 @@ namespace test
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void Opslaan2_Click(object sender, EventArgs e)
-        {
             OpslaanPanel.Visible = true;
         }
-
-        private void Opslaan_Click(object sender, EventArgs e)
-        {
-            string ProjectNaam = Variabelen.ProjectNaam;
-            string bestandsnaam = "Data.txt";
-            string pad = @"C:\Users\walsw\source\repos\test\";
-            string datum = DateTime.Now.ToString("dd/MM");
-            System.IO.File.AppendAllText(pad + bestandsnaam, " | " + ProjectNaam + " | " + datum + " | " + Environment.NewLine);
-            OpslaanPanel.Visible = false;
-            OpslaanMelding.Visible = true;
-        }
-
-        private void OpslaanNee_Click(object sender, EventArgs e)
-        {
-            OpslaanPanel.Visible = false;
-        }
+ 
 
         private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OpslaanNee_Click_1(object sender, EventArgs e)
+        {
+            OpslaanPanel.Visible = false;
+        }
+
+        private void Opslaan_Click(object sender, EventArgs e)
+        {
+            string ProjectNaam = Variabelen.ProjectNaam;
+            string bestandsnaam = "BeoordelingData.txt";
+            string pad = @"C:\Users\walsw\";
+            string datum = DateTime.Now.ToString("dd/MM");
+            System.IO.File.AppendAllText(pad + bestandsnaam, " | " + projectName + " | " + datum + " | " + Beoordelingen.rating1 + " | " + Beoordelingen.rating2 + " | " + Beoordelingen.rating3 + " | " + Beoordelingen.rating4 + " | " + Beoordelingen.rating5 + " | " + Beoordelingen.rating6 + " | " + Beoordelingen.rating7 + " | " + Environment.NewLine);
+            OpslaanPanel.Visible = false;
+            OpslaanMelding.Visible = true;
+        }
+    }
+    class Beoordelingen
+    {
+        public static int rating1;
+        public static int rating2;
+        public static int rating3;
+        public static int rating4;
+        public static int rating5;
+        public static int rating6;
+        public static int rating7;
     }
 }
