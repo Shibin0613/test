@@ -76,21 +76,5 @@ namespace test
                 e.Cancel = true;
             }
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            tekst1.MaxLength = 200;
-        }
-
-
-        private void opslaan_Click(object sender, EventArgs e)
-        {
-
-
-            MessageBox.Show("Gegevens opgeslagen");
-            var tutorial = new tutorial();
-            tutorial.Show();
-            this.Hide();
-        }
     }
 }

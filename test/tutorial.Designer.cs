@@ -43,9 +43,6 @@ namespace test
             this.foto5 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.foto1 = new System.Windows.Forms.PictureBox();
-            this.tekst1 = new System.Windows.Forms.TextBox();
-            this.opslaan = new System.Windows.Forms.Button();
-            this.text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.foto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto4)).BeginInit();
@@ -186,45 +183,11 @@ namespace test
             this.foto1.TabStop = false;
             this.foto1.Visible = false;
             // 
-            // tekst1
-            // 
-            this.tekst1.Location = new System.Drawing.Point(224, 323);
-            this.tekst1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tekst1.MaxLength = 10;
-            this.tekst1.Multiline = true;
-            this.tekst1.Name = "tekst1";
-            this.tekst1.Size = new System.Drawing.Size(125, 22);
-            this.tekst1.TabIndex = 19;
-            this.tekst1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // opslaan
-            // 
-            this.opslaan.Location = new System.Drawing.Point(281, 365);
-            this.opslaan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.opslaan.Name = "opslaan";
-            this.opslaan.Size = new System.Drawing.Size(103, 28);
-            this.opslaan.TabIndex = 20;
-            this.opslaan.Text = "opslaan";
-            this.opslaan.UseVisualStyleBackColor = true;
-            this.opslaan.Click += new System.EventHandler(this.opslaan_Click);
-            // 
-            // text
-            // 
-            this.text.AutoSize = true;
-            this.text.Location = new System.Drawing.Point(90, 302);
-            this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(46, 17);
-            this.text.TabIndex = 24;
-            this.text.Text = "label1";
-            // 
             // tutorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 454);
-            this.Controls.Add(this.text);
-            this.Controls.Add(this.opslaan);
-            this.Controls.Add(this.tekst1);
             this.Controls.Add(this.foto1);
             this.Controls.Add(this.foto5);
             this.Controls.Add(this.foto4);
@@ -246,7 +209,6 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.foto5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -263,8 +225,5 @@ namespace test
         private System.Windows.Forms.PictureBox foto5;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox foto1;
-        private System.Windows.Forms.TextBox tekst1;
-        private System.Windows.Forms.Button opslaan;
-        private System.Windows.Forms.Label text;
     }
 }
