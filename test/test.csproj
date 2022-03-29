@@ -60,7 +60,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="tutorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +83,14 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\test.Form2.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Form3.resources" />
+    <EmbeddedResource Include="obj\Debug\test.tutorial.resources" />
+    <EmbeddedResource Include="obj\Debug\test.vergelijking.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="tutorial.resx">
       <DependentUpon>tutorial.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +98,7 @@
       <DependentUpon>vergelijking.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\test.exe.config" />
+    <None Include="bin\Debug\VoortgangsMeting.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\test.csproj.AssemblyReference.cache" />
@@ -106,17 +119,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Leegster.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Volster.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\netcoreapp3.1\test.dll" />
     <Content Include="bin\Debug\test.exe" />
     <Content Include="bin\Debug\test.pdb" />
+    <Content Include="bin\Debug\VoortgangsMeting.exe" />
+    <Content Include="bin\Debug\VoortgangsMeting.pdb" />
     <Content Include="obj\Debug\test.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\test.exe" />
     <Content Include="obj\Debug\test.pdb" />
+    <Content Include="obj\Debug\VoortgangsMeting.exe" />
+    <Content Include="obj\Debug\VoortgangsMeting.pdb" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

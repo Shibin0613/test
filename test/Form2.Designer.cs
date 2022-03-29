@@ -136,7 +136,8 @@ namespace test
             // 
             // ster2
             // 
-            this.ster2.Image = global::test.Properties.Resources.Leegster;
+            System.Drawing.Bitmap leegster = global::test.Properties.Resources.Leegster;
+            this.ster2.Image = leegster;
             this.ster2.Location = new System.Drawing.Point(43, 0);
             this.ster2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ster2.Name = "ster2";
