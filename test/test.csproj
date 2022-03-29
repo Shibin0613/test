@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form2.cs">
+    <Compile Include="beoordeling.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="beoordeling.Designer.cs">
+      <DependentUpon>beoordeling.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="project.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="project.Designer.cs">
+      <DependentUpon>project.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,11 +77,11 @@
     <Compile Include="vergelijking.Designer.cs">
       <DependentUpon>vergelijking.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="beoordeling.resx">
+      <DependentUpon>beoordeling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="project.resx">
+      <DependentUpon>project.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\test.Form2.resources" />
     <EmbeddedResource Include="obj\Debug\test.Form3.resources" />

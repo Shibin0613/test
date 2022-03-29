@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class Form2 : Form
+    public partial class beoordeling : Form
     {
         private string projectName;
 
-        public Form2(string name)
+        public beoordeling(string name)
         {
             InitializeComponent();
             //Console.WriteLine(rating1 + " " + rating2 + " " + rating3 + " " + rating4 + " " + rating5 + " " + rating6 + " " + rating6);
@@ -71,6 +71,7 @@ namespace test
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            textBox1.Text = Beöorderlinginfo1;
             Beöordelingspunt.Text = beöordelingspunt1;
             Puntinfo.Text = Beöorderlingtext1;
             Leesmeer.FlatStyle = FlatStyle.Flat;
@@ -256,6 +257,8 @@ namespace test
                         Beöordelingspunt.Text = beöordelingspunt6;
                         Puntinfo.Text = Beöorderlingtext6;
                         Sterrentonen(Beoordelingen.rating6);
+                        Gaverder.Visible = true;
+                        Opslaan2.Visible = false;
                         break;
                     }
                 case 7:
@@ -424,7 +427,37 @@ namespace test
         {
             panel6.Visible = false;
         }
+        private void ster1_MouseHover(object sender, EventArgs e)
+        {
+            rating = 1;
+            ster(rating);
+        }
 
+
+        private void ster2_MouseHover(object sender, EventArgs e)
+        {
+            rating = 2;
+            ster(rating);
+        }
+
+        private void ster3_MouseHover(object sender, EventArgs e)
+        {
+            rating = 3;
+            ster(rating);
+        }
+
+        private void ster4_MouseHover(object sender, EventArgs e)
+        {
+            rating = 4;
+            ster(rating);
+        }
+
+        private void ster5_MouseHover(object sender, EventArgs e)
+        {
+            rating = 5;
+            ster(rating);
+        }
+        private void Opslaan_Click(object sender, EventArgs e)
         private void Opslaan_Click_1(object sender, EventArgs e)
         {
             string bestandsnaam = "BeoordelingData.txt";
@@ -438,6 +471,31 @@ namespace test
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void ster1_MouseLeave(object sender, EventArgs e)
+        {
+            Paginatonen();
+        }
+
+        private void ster2_MouseLeave(object sender, EventArgs e)
+        {
+            Paginatonen();
+        }
+
+        private void ster3_MouseLeave(object sender, EventArgs e)
+        {
+            Paginatonen();
+        }
+
+        private void ster4_MouseLeave(object sender, EventArgs e)
+        {
+            Paginatonen();
+        }
+
+        private void ster5_MouseLeave(object sender, EventArgs e)
+        {
+            Paginatonen();
         }
 
        
