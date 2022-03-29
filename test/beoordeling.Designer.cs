@@ -50,7 +50,7 @@ namespace test
             this.OpslaanPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.Opslaan2 = new System.Windows.Forms.Button();
+            //this.Opslaan2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Sluiten = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
