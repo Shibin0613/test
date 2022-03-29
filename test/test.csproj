@@ -7,7 +7,7 @@
     <ProjectGuid>{FF53FB15-403D-4C9D-A325-803F1E6B971E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>test</RootNamespace>
-    <AssemblyName>test</AssemblyName>
+    <AssemblyName>VoortgangsMeting</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -58,9 +58,9 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
     <Compile Include="tutorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,36 +76,28 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx" />
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\test.Form2.resources" />
-    <EmbeddedResource Include="obj\Debug\test.Form3.resources" />
-    <EmbeddedResource Include="obj\Debug\test.vergelijking.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Home1.resources" />
     <EmbeddedResource Include="obj\Debug\test.Properties.Resources.resources" />
     <EmbeddedResource Include="obj\Debug\test.tutorial.resources" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="obj\Debug\test.vergelijking.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Form2.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\test.tutorial.resources" />
+    <EmbeddedResource Include="obj\Debug\test.Variabelen.resources" />
+    <EmbeddedResource Include="obj\Debug\test.vergelijking.resources" />
     <EmbeddedResource Include="tutorial.resx">
       <DependentUpon>tutorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vergelijking.resx">
       <DependentUpon>vergelijking.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\netcoreapp3.1\test.deps.json" />
-    <None Include="bin\Debug\netcoreapp3.1\test.runtimeconfig.dev.json" />
-    <None Include="bin\Debug\netcoreapp3.1\test.runtimeconfig.json" />
     <None Include="bin\Debug\test.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\test.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\test.assets.cache" />
     <None Include="obj\Debug\test.csproj.AssemblyReference.cache" />
     <None Include="obj\Debug\test.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Debug\test.csproj.GenerateResource.cache" />
@@ -130,11 +122,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\netcoreapp3.1\test.dll" />
-    <Content Include="bin\Debug\netcoreapp3.1\test.exe" />
-    <Content Include="bin\Debug\netcoreapp3.1\test.pdb" />
     <Content Include="bin\Debug\test.exe" />
     <Content Include="bin\Debug\test.pdb" />
-    <Content Include="obj\Debug\apphost.exe" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <Content Include="obj\Debug\test.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\test.exe" />
@@ -142,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="obj\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

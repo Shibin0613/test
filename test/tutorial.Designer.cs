@@ -57,11 +57,12 @@ namespace test
             // 
             this.slaover.BackColor = System.Drawing.Color.LightSkyBlue;
             this.slaover.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.slaover.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.slaover.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.slaover.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.slaover.Location = new System.Drawing.Point(66, 423);
+            this.slaover.Location = new System.Drawing.Point(66, 338);
+            this.slaover.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.slaover.Name = "slaover";
-            this.slaover.Size = new System.Drawing.Size(95, 29);
+            this.slaover.Size = new System.Drawing.Size(99, 29);
             this.slaover.TabIndex = 0;
             this.slaover.Text = "Sla het over";
             this.slaover.UseVisualStyleBackColor = false;
@@ -71,7 +72,8 @@ namespace test
             // 
             this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(509, 423);
+            this.button1.Location = new System.Drawing.Point(509, 338);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 1;
@@ -81,9 +83,10 @@ namespace test
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(509, 423);
+            this.button2.Location = new System.Drawing.Point(509, 338);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.Size = new System.Drawing.Size(94, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "Ga verder";
             this.button2.UseVisualStyleBackColor = true;
@@ -91,9 +94,10 @@ namespace test
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(509, 423);
+            this.button3.Location = new System.Drawing.Point(509, 338);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 29);
+            this.button3.Size = new System.Drawing.Size(94, 23);
             this.button3.TabIndex = 3;
             this.button3.Text = "Ga verder";
             this.button3.UseVisualStyleBackColor = true;
@@ -101,9 +105,10 @@ namespace test
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(509, 423);
+            this.button4.Location = new System.Drawing.Point(509, 338);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 29);
+            this.button4.Size = new System.Drawing.Size(94, 23);
             this.button4.TabIndex = 4;
             this.button4.Text = "Ga verder";
             this.button4.UseVisualStyleBackColor = true;
@@ -112,9 +117,10 @@ namespace test
             // foto2
             // 
             this.foto2.Image = ((System.Drawing.Image)(resources.GetObject("foto2.Image")));
-            this.foto2.Location = new System.Drawing.Point(52, 39);
+            this.foto2.Location = new System.Drawing.Point(52, 31);
+            this.foto2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foto2.Name = "foto2";
-            this.foto2.Size = new System.Drawing.Size(619, 311);
+            this.foto2.Size = new System.Drawing.Size(619, 249);
             this.foto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.foto2.TabIndex = 14;
             this.foto2.TabStop = false;
@@ -123,9 +129,10 @@ namespace test
             // foto3
             // 
             this.foto3.Image = ((System.Drawing.Image)(resources.GetObject("foto3.Image")));
-            this.foto3.Location = new System.Drawing.Point(52, 37);
+            this.foto3.Location = new System.Drawing.Point(52, 30);
+            this.foto3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foto3.Name = "foto3";
-            this.foto3.Size = new System.Drawing.Size(619, 311);
+            this.foto3.Size = new System.Drawing.Size(619, 249);
             this.foto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.foto3.TabIndex = 15;
             this.foto3.TabStop = false;
@@ -134,9 +141,10 @@ namespace test
             // foto4
             // 
             this.foto4.Image = ((System.Drawing.Image)(resources.GetObject("foto4.Image")));
-            this.foto4.Location = new System.Drawing.Point(52, 39);
+            this.foto4.Location = new System.Drawing.Point(52, 31);
+            this.foto4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foto4.Name = "foto4";
-            this.foto4.Size = new System.Drawing.Size(619, 336);
+            this.foto4.Size = new System.Drawing.Size(619, 269);
             this.foto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.foto4.TabIndex = 16;
             this.foto4.TabStop = false;
@@ -146,9 +154,10 @@ namespace test
             // foto5
             // 
             this.foto5.Image = ((System.Drawing.Image)(resources.GetObject("foto5.Image")));
-            this.foto5.Location = new System.Drawing.Point(52, 37);
+            this.foto5.Location = new System.Drawing.Point(52, 30);
+            this.foto5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foto5.Name = "foto5";
-            this.foto5.Size = new System.Drawing.Size(619, 322);
+            this.foto5.Size = new System.Drawing.Size(619, 258);
             this.foto5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.foto5.TabIndex = 17;
             this.foto5.TabStop = false;
@@ -156,9 +165,10 @@ namespace test
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(509, 423);
+            this.button5.Location = new System.Drawing.Point(509, 338);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 29);
+            this.button5.Size = new System.Drawing.Size(94, 23);
             this.button5.TabIndex = 5;
             this.button5.Text = "Begin";
             this.button5.UseVisualStyleBackColor = true;
@@ -167,9 +177,10 @@ namespace test
             // foto1
             // 
             this.foto1.Image = ((System.Drawing.Image)(resources.GetObject("foto1.Image")));
-            this.foto1.Location = new System.Drawing.Point(52, 37);
+            this.foto1.Location = new System.Drawing.Point(52, 30);
+            this.foto1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foto1.Name = "foto1";
-            this.foto1.Size = new System.Drawing.Size(619, 320);
+            this.foto1.Size = new System.Drawing.Size(619, 256);
             this.foto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.foto1.TabIndex = 18;
             this.foto1.TabStop = false;
@@ -177,19 +188,21 @@ namespace test
             // 
             // tekst1
             // 
-            this.tekst1.Location = new System.Drawing.Point(224, 404);
+            this.tekst1.Location = new System.Drawing.Point(224, 323);
+            this.tekst1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tekst1.MaxLength = 10;
             this.tekst1.Multiline = true;
             this.tekst1.Name = "tekst1";
-            this.tekst1.Size = new System.Drawing.Size(125, 27);
+            this.tekst1.Size = new System.Drawing.Size(125, 22);
             this.tekst1.TabIndex = 19;
             this.tekst1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // opslaan
             // 
-            this.opslaan.Location = new System.Drawing.Point(281, 456);
+            this.opslaan.Location = new System.Drawing.Point(281, 365);
+            this.opslaan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.opslaan.Name = "opslaan";
-            this.opslaan.Size = new System.Drawing.Size(94, 29);
+            this.opslaan.Size = new System.Drawing.Size(103, 28);
             this.opslaan.TabIndex = 20;
             this.opslaan.Text = "opslaan";
             this.opslaan.UseVisualStyleBackColor = true;
@@ -198,17 +211,17 @@ namespace test
             // text
             // 
             this.text.AutoSize = true;
-            this.text.Location = new System.Drawing.Point(90, 378);
+            this.text.Location = new System.Drawing.Point(90, 302);
             this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(50, 20);
+            this.text.Size = new System.Drawing.Size(46, 17);
             this.text.TabIndex = 24;
             this.text.Text = "label1";
             // 
             // tutorial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 567);
+            this.ClientSize = new System.Drawing.Size(717, 454);
             this.Controls.Add(this.text);
             this.Controls.Add(this.opslaan);
             this.Controls.Add(this.tekst1);
@@ -223,10 +236,10 @@ namespace test
             this.Controls.Add(this.slaover);
             this.Controls.Add(this.foto2);
             this.Controls.Add(this.button5);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "tutorial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Voortgangsmetingsapplicatie_Tutorial";
-            this.Load += new System.EventHandler(this.tutorial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.foto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto4)).EndInit();

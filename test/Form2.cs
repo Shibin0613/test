@@ -264,7 +264,7 @@ namespace test
                         textBox1.Text = Beöorderlinginfo7;
                         Beöordelingspunt.Text = beöordelingspunt7;
                         Puntinfo.Text = Beöorderlingtext7;
-                        Sterrentonen(Beoordelingen.rating7);
+                        Sterrentonen(rating7);
                         Gaverder.Visible = false;
                         Opslaan2.Visible = true;
                         break;
@@ -433,7 +433,7 @@ namespace test
             string datum = DateTime.Now.ToString("dd/MM");
             System.IO.File.AppendAllText(pad + bestandsnaam, " | " + projectName + " | " + datum + " | " + Beoordelingen.rating1 + " | " + Beoordelingen.rating2 + " | " + Beoordelingen.rating3 + " | " + Beoordelingen.rating4 + " | " + Beoordelingen.rating5 + " | " + Beoordelingen.rating6 + " | " + Beoordelingen.rating7 + " | " + Environment.NewLine);
             OpslaanPanel.Visible = false;
-            OpslaanMelding.Visible = true;
+
         }
     }
     class Beoordelingen
