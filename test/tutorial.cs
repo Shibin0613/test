@@ -15,13 +15,9 @@ namespace test
         {
             InitializeComponent();
             foto1.Show();
-        }
-
-        private void tutorial1_Click(object sender, EventArgs e)
-        {
             button1.BringToFront();
-
         }
+
         private void slaover_Click(object sender, EventArgs e)
         {
             var vergelijking = new vergelijking();
@@ -36,35 +32,6 @@ namespace test
             foto2.Show();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            button3.BringToFront();
-            foto2.Hide();
-            foto3.Show();
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            button4.BringToFront();
-            foto3.Hide();
-            foto4.Show();
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            button5.BringToFront();
-            foto4.Hide();
-            foto5.Show();
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            var vergelijking = new vergelijking();
-            vergelijking.Show();
-            this.Hide();
-        }
-
         private void foto4_Click(object sender, EventArgs e)
         {
 
@@ -75,6 +42,34 @@ namespace test
             {
                 e.Cancel = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button3.BringToFront();
+            foto2.Hide();
+            foto3.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button4.BringToFront();
+            foto3.Hide();
+            foto4.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button5.BringToFront();
+            foto4.Hide();
+            foto5.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var vergelijking = new vergelijking();
+            vergelijking.Show();
+            this.Hide();
         }
     }
 }
