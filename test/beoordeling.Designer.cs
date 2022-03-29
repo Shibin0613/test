@@ -1,7 +1,7 @@
 ﻿
 namespace test
 {
-    partial class Form2
+    partial class beoordeling
     {
         /// <summary>
         /// Required designer variable.

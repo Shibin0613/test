@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class Form2 : Form
+    public partial class beoordeling : Form
     {
         private string projectName;
 
-        public Form2(string name)
+        public beoordeling(string name)
         {
             InitializeComponent();
             //Console.WriteLine(rating1 + " " + rating2 + " " + rating3 + " " + rating4 + " " + rating5 + " " + rating6 + " " + rating6);

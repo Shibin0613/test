@@ -11,12 +11,12 @@ using System.Windows.Forms;
 namespace test
 {
    
-    public partial class Form3 : Form
+    public partial class project : Form
     {
       
 
 
-        public Form3()
+        public project()
         {
             InitializeComponent();
 
@@ -40,7 +40,7 @@ namespace test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 beoordeling = new Form2(textBox1.Text);
+            beoordeling beoordeling = new beoordeling(textBox1.Text);
 
             beoordeling.ShowDialog();
 
