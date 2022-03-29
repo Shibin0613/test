@@ -409,7 +409,7 @@ namespace test
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            panel6.Visible = true;
+            OpslaanPanel.Visible = true;
         }
  
 
@@ -423,9 +423,9 @@ namespace test
 
         }
 
-        private void OpslaanNee_Click(object sender, EventArgs e)
+        private void OpslaanNee_Click_1(object sender, EventArgs e)
         {
-            panel6.Visible = false;
+            OpslaanPanel.Visible = false;
         }
         private void ster1_MouseHover(object sender, EventArgs e)
         {
@@ -460,6 +460,7 @@ namespace test
         
         private void Opslaan_Click_1(object sender, EventArgs e)
         {
+            string ProjectNaam = Variabelen.ProjectNaam;
             string bestandsnaam = "BeoordelingData.txt";
             string pad = @"C:\Users\walsw\";
             string datum = DateTime.Now.ToString("dd/MM");
@@ -497,8 +498,6 @@ namespace test
         {
             Paginatonen();
         }
-
-       
     }
     class Beoordelingen
     {
