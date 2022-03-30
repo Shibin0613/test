@@ -66,9 +66,9 @@ namespace test
             //}
         }
 
-        //private void LezenInLijst()
-        //{
-        //    var fileLines = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt");
+        private void LezenInLijst()
+        {
+            var fileLines = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt"))
             
         //    for (int i = 0; i + 8 < fileLines.Length; i += 9)
         //    {
