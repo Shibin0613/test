@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,21 +49,9 @@ namespace test
         String Beöorderlinginfo6 = "Hoe verliep de samenwerking met het team in de afgelopen periode? Ben je tevreden met de communicatie tussen ieder teamlid en wist je altijd waar elk lid aan toe was? Wilden de leden je helpen wanneer je vast zat op een probleem of wanneer je een vraag had?";
         String Beöorderlinginfo7 = "Beroepshouding";
 
-        String Opmerking1 = "";
-        String Opmerking2 = "";
-        String Opmerking3 = "";
-        String Opmerking4 = "";
-        String Opmerking5 = "";
-        String Opmerking6 = "";
-        String Opmerking7 = "";
+        
 
-        //int rating1;
-        //int rating2;
-        //int rating3;
-        //int rating4;
-        //int rating5;
-        //int rating6;
-        //int rating7;
+        
 
         int rating = 0;
 
@@ -162,37 +151,37 @@ namespace test
             {
                 case 1:
                     {
-                        Opmerking1 = Opmerking.Text;
+                        Opmerkingen.Opmerking1 = Opmerking.Text;
                         break;
                     }
                 case 2:
                     {
-                        Opmerking2 = Opmerking.Text;
+                        Opmerkingen.Opmerking2 = Opmerking.Text;
                         break;
                     }
                 case 3:
                     {
-                        Opmerking3 = Opmerking.Text;
+                        Opmerkingen.Opmerking3 = Opmerking.Text;
                         break;
                     }
                 case 4:
                     {
-                        Opmerking4 = Opmerking.Text;
+                        Opmerkingen.Opmerking4 = Opmerking.Text;
                         break;
                     }
                 case 5:
                     {
-                        Opmerking5 = Opmerking.Text;
+                        Opmerkingen.Opmerking5 = Opmerking.Text;
                         break;
                     }
                 case 6:
                     {
-                        Opmerking6 = Opmerking.Text;
+                        Opmerkingen.Opmerking6 = Opmerking.Text;
                         break;
                     }
                 case 7:
                     {
-                        Opmerking7 = Opmerking.Text;
+                        Opmerkingen.Opmerking7 = Opmerking.Text;
                         break;
                     }
                 case 8:
@@ -207,7 +196,7 @@ namespace test
             {
                 case 1:
                     {
-                        Opmerking.Text = Opmerking1;
+                        Opmerking.Text = Opmerkingen.Opmerking1;
                         textBox1.Text = Beöorderlinginfo1;
                         Beöordelingspunt.Text = beöordelingspunt1;
                         Puntinfo.Text = Beöorderlingtext1;
@@ -216,7 +205,7 @@ namespace test
                     }
                 case 2:
                     {
-                        Opmerking.Text = Opmerking2;
+                        Opmerking.Text = Opmerkingen.Opmerking2;
                         textBox1.Text = Beöorderlinginfo2;
                         Beöordelingspunt.Text = beöordelingspunt2;
                         Puntinfo.Text = Beöorderlingtext2;
@@ -225,7 +214,7 @@ namespace test
                     }
                 case 3:
                     {
-                        Opmerking.Text = Opmerking3;
+                        Opmerking.Text = Opmerkingen.Opmerking3;
                         textBox1.Text = Beöorderlinginfo3;
                         Beöordelingspunt.Text = beöordelingspunt3;
                         Puntinfo.Text = Beöorderlingtext3;
@@ -234,7 +223,7 @@ namespace test
                     }
                 case 4:
                     {
-                        Opmerking.Text = Opmerking4;
+                        Opmerking.Text = Opmerkingen.Opmerking4;
                         textBox1.Text = Beöorderlinginfo4;
                         Beöordelingspunt.Text = beöordelingspunt4;
                         Puntinfo.Text = Beöorderlingtext4;
@@ -243,7 +232,7 @@ namespace test
                     }
                 case 5:
                     {
-                        Opmerking.Text = Opmerking5;
+                        Opmerking.Text = Opmerkingen.Opmerking5;
                         textBox1.Text = Beöorderlinginfo5;
                         Beöordelingspunt.Text = beöordelingspunt5;
                         Puntinfo.Text = Beöorderlingtext5;
@@ -252,24 +241,24 @@ namespace test
                     }
                 case 6:
                     {
-                        Opmerking.Text = Opmerking6;
+                        Opmerking.Text = Opmerkingen.Opmerking6;
                         textBox1.Text = Beöorderlinginfo6;
                         Beöordelingspunt.Text = beöordelingspunt6;
                         Puntinfo.Text = Beöorderlingtext6;
                         Sterrentonen(Beoordelingen.rating6);
                         Gaverder.Visible = true;
-                        Opslaan2.Visible = false;
+                        Opslaan1.Visible = false;
                         break;
                     }
                 case 7:
                     {
-                        Opmerking.Text = Opmerking7;
+                        Opmerking.Text = Opmerkingen.Opmerking7;
                         textBox1.Text = Beöorderlinginfo7;
                         Beöordelingspunt.Text = beöordelingspunt7;
                         Puntinfo.Text = Beöorderlingtext7;
                         Sterrentonen(Beoordelingen.rating7);
                         Gaverder.Visible = false;
-                        Opslaan2.Visible = true;
+                        Opslaan1.Visible = true;
                         break;
                     }
             }
@@ -407,7 +396,7 @@ namespace test
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void Opslaan1_Click(object sender, EventArgs e)
         {
             panel6.Visible = true;
         }
@@ -460,11 +449,11 @@ namespace test
         private void Opslaan_Click_1(object sender, EventArgs e)
         {
             string bestandsnaam = "BeoordelingData.txt";
-            string pad = @"C:\Users\walsw\";
-            string datum = DateTime.Now.ToString("dd/MM");
-            System.IO.File.AppendAllText(pad + bestandsnaam, projectName + " | " + datum + " | " + Beoordelingen.rating1 + " | " + Beoordelingen.rating2 + " | " + Beoordelingen.rating3 + " | " + Beoordelingen.rating4 + " | " + Beoordelingen.rating5 + " | " + Beoordelingen.rating6 + " | " + Beoordelingen.rating7 + Environment.NewLine);
+            string getDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            string datum = DateTime.Now.ToString("dd/MM/yyyy");
+            System.IO.File.AppendAllText(getDirectory+"\\"+bestandsnaam, projectName + " | " + datum + " | " + Beoordelingen.rating1 + " " +  Opmerkingen.Opmerking1 + " | " + Beoordelingen.rating2 + " " + Opmerkingen.Opmerking2 + " | " + Beoordelingen.rating3 + " " + Opmerkingen.Opmerking3 + " | " + Beoordelingen.rating4 + " " + Opmerkingen.Opmerking4 + " | " + Beoordelingen.rating5 + " " + Opmerkingen.Opmerking5 + " | " + Beoordelingen.rating6 + " " + Opmerkingen.Opmerking6 + " | " + Beoordelingen.rating7 + " " + Opmerkingen.Opmerking7 + Environment.NewLine);
             panel6.Visible = false;
-
+            
         }
 
         private void label2_Click_1(object sender, EventArgs e)
@@ -496,8 +485,6 @@ namespace test
         {
             Paginatonen();
         }
-
-       
     }
     class Beoordelingen
     {
@@ -508,5 +495,15 @@ namespace test
         public static int rating5;
         public static int rating6;
         public static int rating7;
+    }
+    class Opmerkingen
+    {
+        public static string Opmerking1;
+        public static string Opmerking2;
+        public static string Opmerking3;
+        public static string Opmerking4;
+        public static string Opmerking5;
+        public static string Opmerking6;
+        public static string Opmerking7;
     }
 }

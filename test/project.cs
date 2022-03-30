@@ -42,58 +42,25 @@ namespace test
             Lijst.Columns.Add("Samenwerken");
             Lijst.Columns.Add("Beroepshouding");
 
-            List<string> data = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt").ToList();
+
+            string getDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            string fileName = "BeoordelingData.txt";
+            TextWriter txt = new StreamWriter(getDirectory+"\\"+fileName);
+            txt.Close();
+
+            List<string> data = File.ReadAllLines(getDirectory+"\\"+fileName).ToList();
             foreach (string d in data)
             {
                 string[] items = d.Split(new char[] { '|' },
                        StringSplitOptions.RemoveEmptyEntries);
                 Lijst.Items.Add(new ListViewItem(items));
-            }
-            //Lijst.View = View.Details;
-            //Lijst.Columns.Add("Project");
-            //Lijst.Columns.Add("Datum");
-            //Lijst.Columns.Add("Klantgericht");
-            //Lijst.Columns.Add("Proces");
-            //Lijst.Columns.Add("Planning");
-            //Lijst.Columns.Add("Standup");
-            //Lijst.Columns.Add("Beroepscompetentie");
-            //Lijst.Columns.Add("Samenwerken");
-            //Lijst.Columns.Add("Beroepshouding");
 
-            //for (int i = 0; i < Lijst.Columns.Count; i++)
-            //{
-            //    Lijst.Columns[i].Width = -2;
-            //}
+                
+            }
+            
         }
 
-        private void LezenInLijst()
-        {
-            var fileLines = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt"))
-            
-        //    for (int i = 0; i + 8 < fileLines.Length; i += 9)
-        //    {
-        //        Lijst.Items.Add(
-        //            new ListViewItem(new[]
-        //            {
-        //                fileLines[i],
-        //                fileLines[i + 1],
-        //                fileLines[i + 2],
-        //                fileLines[i + 3],
-        //                fileLines[i + 4],
-        //                fileLines[i + 5],
-        //                fileLines[i + 6],
-        //                fileLines[i + 7],
-        //                fileLines[i + 8]
-        //            }));
-        //    }
-
-        //    for (int i = 0; i < Lijst.Columns.Count; i++)
-        //        {
-        //        Lijst.Columns[i].Width = -2;
-        //        }
-
-        //}
-
+       
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
@@ -115,8 +82,11 @@ namespace test
             this.Hide();
         }
 
-       
-
+        private void Lijst_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
+        {
+            e.Cancel = true;
+            e.NewWidth = Lijst.Columns[e.ColumnIndex].Width;
+        }
     }
     class Variabelen
     {

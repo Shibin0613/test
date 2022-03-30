@@ -33,16 +33,12 @@ namespace test
             ""}, -1, System.Drawing.Color.Empty, System.Drawing.Color.White, null);
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Lijst = new System.Windows.Forms.ListView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tutorial = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,45 +64,18 @@ namespace test
             this.label3.Text = "Nieuw project";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(12, 91);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(297, 64);
-            this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // Lijst
             // 
             this.Lijst.HideSelection = false;
             this.Lijst.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
-            this.Lijst.Location = new System.Drawing.Point(17, 184);
+            this.Lijst.Location = new System.Drawing.Point(12, 85);
             this.Lijst.Name = "Lijst";
+            this.Lijst.ShowItemToolTips = true;
             this.Lijst.Size = new System.Drawing.Size(339, 340);
             this.Lijst.TabIndex = 9;
             this.Lijst.UseCompatibleStateImageBehavior = false;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(14, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "(1 week geleden)";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Clickcollectsnack";
+            this.Lijst.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.Lijst_ColumnWidthChanging);
             // 
             // panel2
             // 
@@ -167,14 +136,12 @@ namespace test
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Lijst);
             this.Controls.Add(this.tutorial);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Name = "project";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -185,9 +152,6 @@ namespace test
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
