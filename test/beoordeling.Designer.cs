@@ -317,7 +317,7 @@ namespace test
             // panel5
             // 
             this.panel5.Controls.Add(this.Gaverder);
-            this.panel5.Controls.Add(this.Opslaan2);
+            //this.panel5.Controls.Add(this.Opslaan2);
             this.panel5.Controls.Add(this.panel3);
             this.panel5.Controls.Add(this.panel2);
             this.panel5.Controls.Add(this.Gaterug);
@@ -332,15 +332,15 @@ namespace test
             // 
             // Opslaan2
             // 
-            this.Opslaan2.Location = new System.Drawing.Point(755, 492);
-            this.Opslaan2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Opslaan2.Name = "Opslaan2";
-            this.Opslaan2.Size = new System.Drawing.Size(133, 34);
-            this.Opslaan2.TabIndex = 4;
-            this.Opslaan2.Text = "Opslaan";
-            this.Opslaan2.UseVisualStyleBackColor = true;
-            this.Opslaan2.Visible = false;
-            this.Opslaan2.Click += new System.EventHandler(this.button1_Click_1);
+            //this.Opslaan2.Location = new System.Drawing.Point(755, 492);
+            //this.Opslaan2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            //this.Opslaan2.Name = "Opslaan2";
+            //this.Opslaan2.Size = new System.Drawing.Size(133, 34);
+            //this.Opslaan2.TabIndex = 4;
+            //this.Opslaan2.Text = "Opslaan";
+            //this.Opslaan2.UseVisualStyleBackColor = true;
+            //this.Opslaan2.Visible = false;
+            //this.Opslaan2.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel3
             // 
