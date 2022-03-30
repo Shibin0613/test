@@ -50,7 +50,7 @@ namespace test
 
         private void LezenInLijst()
         {
-            var fileLines = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt"))
+            var fileLines = File.ReadAllLines(@"C:\Users\walsw\BeoordelingData.txt");
             
             for (int i = 0; i + 4 < fileLines.Length; i += 5)
             {
