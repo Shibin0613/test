@@ -45,12 +45,8 @@ namespace test
 
             string getDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             string fileName = "BeoordelingData.txt";
-            if(!File.Exists(getDirectory + "\\" + fileName))
-            {
-                TextWriter txt = new StreamWriter(getDirectory + "\\" + fileName);
-                txt.Close();
-            }
-            
+            TextWriter txt = new StreamWriter(getDirectory+"\\"+fileName);
+            txt.Close();
 
             List<string> data = File.ReadAllLines(getDirectory+"\\"+fileName).ToList();
             foreach (string d in data)
