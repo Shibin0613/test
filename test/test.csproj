@@ -130,6 +130,7 @@
     <Content Include="obj\Debug\test.pdb" />
     <Content Include="obj\Debug\VoortgangsMeting.exe" />
     <Content Include="obj\Debug\VoortgangsMeting.pdb" />
+    <None Include="Resources\BeoordelingData.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />

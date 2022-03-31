@@ -448,6 +448,7 @@ namespace test
         }
         private void Opslaan_Click_1(object sender, EventArgs e)
         {
+            this.Close();
             string bestandsnaam = "BeoordelingData.txt";
             string getDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             string datum = DateTime.Now.ToString("dd/MM/yyyy");
